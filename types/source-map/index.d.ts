@@ -73,6 +73,8 @@ declare namespace SourceMap {
         public sourceContentFor(source: string, returnNullOnMissing?: boolean): string;
 
         public eachMapping(callback: (mapping: MappingItem) => void, context?: any, order?: number): void;
+
+        public get sources(): string[];
     }
 
     class SourceMapGenerator {
